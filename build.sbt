@@ -12,7 +12,7 @@ libraryDependencies += "net.liftweb" %% "lift-json" % "3.4.0"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.4" % Test
 
-libraryDependencies += "org.twitter4j" % "twitter4j-stream" % "4.0.6"
+libraryDependencies += "org.twitter4j" % "twitter4j-core" % "4.0.4"
 
 libraryDependencies += "com.typesafe" % "config" % "1.4.0"
 

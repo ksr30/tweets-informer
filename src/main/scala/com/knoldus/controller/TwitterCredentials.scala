@@ -8,7 +8,16 @@ import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 import scala.language.implicitConversions
 
+/**
+ * This class fetch tweets on basis of hashtags.
+ */
 class TwitterCredentials {
+  /**
+   * This function fetch List of tweets on basis of Hashtags.
+   *
+   * @param hashtag Takes hashtag to fetch tweets.
+   * @return Returns tweets on basis of tag in format of Status.
+   */
   def getTweets(hashtag: Query): Future[List[Status]] = {
     val twitter = new TwitterFactory().getInstance()
     // Authorising with your Twitter Application credentials
